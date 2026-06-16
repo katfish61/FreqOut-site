@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FreqOut — Support</title>
+<style>
+  body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 48px auto; padding: 0 24px; color: #1c1c1e; }
+  h1 { font-size: 2rem; font-weight: 700; }
+  h2 { font-size: 1.15rem; font-weight: 600; margin-top: 36px; }
+  p, li { line-height: 1.65; color: #3a3a3c; }
+  ul { padding-left: 1.4em; }
+  a { color: #0071e3; }
+  table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+  th { text-align: left; font-weight: 600; padding: 8px 12px; background: #f2f2f7; }
+  td { padding: 8px 12px; border-top: 1px solid #e5e5ea; vertical-align: top; }
+  footer { margin-top: 64px; font-size: 0.85rem; color: #8e8e93; }
+</style>
+</head>
+<body>
+<h1>Support</h1>
+
+<h2>User Manual</h2>
+<p>The <a href="user-manual.html">FreqOut User Manual</a> covers setup,
+connecting to an rtl_tcp server, running sweeps, reading the display, and
+frequency coordination for radio microphone work.</p>
+
+<h2>Common issues</h2>
+<table>
+  <tr><th>Symptom</th><th>Likely fix</th></tr>
+  <tr><td>&#8220;No rtl_tcp server found&#8221;</td><td>Check the server is running, the IP address is correct, and port 1234 is not blocked by a firewall.</td></tr>
+  <tr><td>Connected but sweep is instant or shows no data</td><td>Stale samples in the buffer — disconnect, restart the rtl_tcp server, then reconnect.</td></tr>
+  <tr><td>Noise floor suddenly much higher</td><td>Tuner overload — reduce gain in &#9881;. Switch any transmitters off during the survey.</td></tr>
+  <tr><td>App shows DEMO watermark</td><td>Source picker in &#9881; is set to Demo — change it to rtl_tcp.</td></tr>
+  <tr><td>App asks for Local Network permission</td><td>Tap Allow. FreqOut needs this to reach the rtl_tcp server on your network.</td></tr>
+  <tr><td>Pi rig: can&#8217;t SSH after enabling hotspot</td><td>Join the FreqOut Wi-Fi from your Mac and SSH to 10.42.0.1.</td></tr>
+</table>
+
+<h2>Get in touch</h2>
+<p>For bugs, feature requests, or anything not covered above:</p>
+<ul>
+  <li>Email: <a href="mailto:keithtunney@gmail.com">keithtunney@gmail.com</a></li>
+  <li>GitHub Issues: <a href="https://github.com/katfish61/FreqOut/issues">github.com/katfish61/FreqOut/issues</a></li>
+</ul>
+
+<footer><a href="index.html">FreqOut</a></footer>
+</body>
+</html>
