@@ -3,11 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FreqOut</title>
+<title>FreqOut — RF Spectrum Survey App for Wireless Mics (iOS)</title>
+<meta name="description" content="FreqOut is an iOS/iPadOS RF spectrum survey app for production sound. Sweep the UHF band (470–1000 MHz) with an RTL-SDR dongle to see what's already using the spectrum at a venue, then pick clear wireless mic frequencies before you deploy. Free on the App Store.">
+<meta name="keywords" content="RF coordination app, wireless mic frequency finder, RF spectrum survey, RTL-SDR iOS, UHF spectrum analyzer, radio mic frequencies, site survey RF, production sound app, PMSE frequencies">
+<link rel="canonical" href="https://katfish61.github.io/FreqOut-site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FreqOut — RF Spectrum Survey App for Wireless Mics">
+<meta property="og:description" content="Site-survey the UHF band with an RTL-SDR dongle and find clear wireless mic frequencies before you deploy. Free iOS/iPadOS app for film, TV, and theatre sound.">
+<meta property="og:url" content="https://katfish61.github.io/FreqOut-site/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FreqOut — RF Spectrum Survey App for Wireless Mics">
+<meta name="twitter:description" content="Site-survey the UHF band with an RTL-SDR dongle and find clear wireless mic frequencies before you deploy.">
 <style>
   body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 48px auto; padding: 0 24px; color: #1c1c1e; }
   h1 { font-size: 2rem; font-weight: 700; }
-  p { line-height: 1.6; color: #3a3a3c; }
+  h2 { font-size: 1.15rem; font-weight: 600; margin-top: 36px; }
+  p, li { line-height: 1.6; color: #3a3a3c; }
+  ul { padding-left: 1.4em; }
   nav { margin-top: 32px; }
   nav a { display: inline-block; margin-right: 24px; color: #0071e3; text-decoration: none; font-weight: 500; }
   nav a:hover { text-decoration: underline; }
@@ -16,13 +28,27 @@
 </head>
 <body>
 <h1>FreqOut</h1>
-<p>UHF spectrum survey for production sound. Survey a venue before deploying
-radio microphones — see what is already occupying the band and pick clear
-frequencies with confidence.</p>
+<p>FreqOut is a <strong>site-survey tool for production sound</strong> on iOS and
+iPadOS. Before you deploy wireless mics on a film, TV, or theatre job, sweep the
+UHF band with an RTL-SDR dongle to see what's already occupying the spectrum at
+the venue — then pick clear frequencies with confidence.</p>
+
+<h2>Why FreqOut</h2>
+<p>Serious RF coordination on iOS has largely meant compromising, or carrying an
+Android tablet just to run one. FreqOut brings a real spectrum survey workflow —
+sweep passes, trace stitching, a clear waterfall view — to the iPad already in
+your kit, using an inexpensive RTL-SDR dongle reached over the network via
+<code>rtl_tcp</code>. No demodulation, no desktop software: just a sweep of the
+band and a picture of what's clear.</p>
+
+<h2>Built for the UK UHF band</h2>
+<p>v1 covers 470–1000 MHz, with the UK DTT channel grid (Ch 21–48) and the three
+main PMSE allocations highlighted: the Ch 38 shared licence (606–614 MHz),
+823–832 MHz licensed, and 863–865 MHz licence-exempt.</p>
+
 <nav>
   <a href="privacy.html">Privacy Policy</a>
   <a href="support.html">Support</a>
-  <a href="user-manual.html">User Manual</a>
 </nav>
 <footer>&copy; 2026 Keith Tunney</footer>
 </body>
